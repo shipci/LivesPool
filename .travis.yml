@@ -5,7 +5,6 @@ install:
     - "pip install -r requirements.txt --use-mirrors"
     - "pip install coverage"
     - "pip install coveralls"
-
 script:
     - cp "starter.db" "cutthroat_test.db"
     - nosetests --with-cov --cov-report term-missing --cov cutthroat src/tests/
